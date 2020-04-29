@@ -1,6 +1,6 @@
 ﻿namespace Prototipo2P
 {
-	partial class Cleintes
+	partial class Linea
 	{
 		/// <summary>
 		/// Variable del diseñador necesaria.
@@ -28,21 +28,35 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.navegador1 = new CapaDeDiseno.Navegador();
 			this.SuspendLayout();
 			// 
-			// Cleintes
+			// navegador1
+			// 
+			this.navegador1.BackColor = System.Drawing.Color.White;
+			this.navegador1.Location = new System.Drawing.Point(6, 3);
+			this.navegador1.Name = "navegador1";
+			this.navegador1.Size = new System.Drawing.Size(850, 650);
+			this.navegador1.TabIndex = 0;
+			this.navegador1.Load += new System.EventHandler(this.Navegador1_Load);
+			// 
+			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 660);
+			this.ClientSize = new System.Drawing.Size(858, 657);
+			this.Controls.Add(this.navegador1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-			this.Name = "Cleintes";
-			this.Text = "Form1";
+			this.Name = "Form1";
+			this.Text = "Linea";
+			this.Load += new System.EventHandler(this.Form1_Load);
 			this.ResumeLayout(false);
 
 		}
 
 		#endregion
+
+		private CapaDeDiseno.Navegador navegador1;
 	}
 }
 

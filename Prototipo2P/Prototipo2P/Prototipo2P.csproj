@@ -33,8 +33,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CapaDeDiseno">
+      <HintPath>..\..\DLLS\Navegador\CapaDeDiseno\bin\Debug\CapaDeDiseno.dll</HintPath>
+    </Reference>
     <Reference Include="CapaDiseno">
       <HintPath>..\..\DLLS\Seguridad\CapaDiseno\bin\Debug\CapaDiseno.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaVista">
+      <HintPath>..\..\DLLS\ComboAuto\ComboAuto\CapaVista\bin\Debug\CapaVista.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="itextsharp">
+      <HintPath>..\..\DLLS\itextsharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,11 +60,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cleintes.cs">
+    <Compile Include="conexion.cs" />
+    <Compile Include="Productos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cleintes.Designer.cs">
-      <DependentUpon>Cleintes.cs</DependentUpon>
+    <Compile Include="Productos.Designer.cs">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Linea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Linea.Designer.cs">
+      <DependentUpon>Linea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Marca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marca.Designer.cs">
+      <DependentUpon>Marca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
     <Compile Include="MDI-Proyecto2P.cs">
       <SubType>Form</SubType>
@@ -63,8 +93,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Cleintes.resx">
-      <DependentUpon>Cleintes.cs</DependentUpon>
+    <Compile Include="Rentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rentas.Designer.cs">
+      <DependentUpon>Rentas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Productos.resx">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Linea.resx">
+      <DependentUpon>Linea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marca.resx">
+      <DependentUpon>Marca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDI-Proyecto2P.resx">
       <DependentUpon>MDI-Proyecto2P.cs</DependentUpon>
@@ -78,6 +123,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Rentas.resx">
+      <DependentUpon>Rentas.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
