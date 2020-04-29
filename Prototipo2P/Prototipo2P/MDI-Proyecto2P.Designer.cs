@@ -45,7 +45,6 @@
 			this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.catalogosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.vendedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.proveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.bodegasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -178,7 +177,6 @@
 			// 
 			this.catalogosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clientesToolStripMenuItem,
-            this.vendedoresToolStripMenuItem,
             this.proveedoresToolStripMenuItem,
             this.bodegasToolStripMenuItem,
             this.productosToolStripMenuItem});
@@ -193,12 +191,6 @@
 			this.clientesToolStripMenuItem.Text = "Clientes";
 			this.clientesToolStripMenuItem.Click += new System.EventHandler(this.ClientesToolStripMenuItem_Click);
 			// 
-			// vendedoresToolStripMenuItem
-			// 
-			this.vendedoresToolStripMenuItem.Name = "vendedoresToolStripMenuItem";
-			this.vendedoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-			this.vendedoresToolStripMenuItem.Text = "Vendedores";
-			// 
 			// proveedoresToolStripMenuItem
 			// 
 			this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
@@ -211,12 +203,14 @@
 			this.bodegasToolStripMenuItem.Name = "bodegasToolStripMenuItem";
 			this.bodegasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.bodegasToolStripMenuItem.Text = "Linea";
+			this.bodegasToolStripMenuItem.Click += new System.EventHandler(this.BodegasToolStripMenuItem_Click);
 			// 
 			// productosToolStripMenuItem
 			// 
 			this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
 			this.productosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.productosToolStripMenuItem.Text = "Productos";
+			this.productosToolStripMenuItem.Click += new System.EventHandler(this.ProductosToolStripMenuItem_Click);
 			// 
 			// procesosToolStripMenuItem
 			// 
@@ -306,7 +300,6 @@
 		private System.Windows.Forms.ToolStripMenuItem seguridadToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem vendedoresToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem proveedoresToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem bodegasToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem productosToolStripMenuItem;
