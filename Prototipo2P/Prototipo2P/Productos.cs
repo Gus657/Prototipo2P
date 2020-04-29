@@ -17,7 +17,7 @@ namespace Prototipo2P
 		{
 			InitializeComponent();
 			usuario = usuarioActivo;
-			string[] alias = { "Codigo", "Nombres", "Linea","Marca", "Existencia", "Estado" }; // Arreglo de nombres para campos
+			string[] alias = { "Codigo", "Nombres", "Linea","Marca","Precio", "Existencia", "Estado" }; // Arreglo de nombres para campos
 			navegador1.asignarAlias(alias); // Asignar nombres
 			navegador1.asignarSalida(this); // Asignar form de salida
 			Color nuevoColor = System.Drawing.ColorTranslator.FromHtml("#FFFFFF"); // Deficion de 

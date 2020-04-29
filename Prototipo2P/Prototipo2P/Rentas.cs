@@ -25,17 +25,16 @@ namespace Prototipo2P
 		{
 			InitializeComponent();
 			usuario = usuarioActivo;
-			combo1.llenarse("cliente","MEMBRESIA");
-			combo2.llenarse("empleado", "EMPLEADO");
-			combo3.llenarse("material", "MATERIAL");
+			combo1.llenarse("clientes","codigo_cliente");
+			combo2.llenarse("vendedores", "codigo_vendedor");
+			combo3.llenarse("productos", "codigo_producto");
 			dateTimePicker1.Format = DateTimePickerFormat.Custom;
 			dateTimePicker1.CustomFormat = "yyyy-MM-dd";
-			dateTimePicker2.Format = DateTimePickerFormat.Custom;
-			dateTimePicker2.CustomFormat = "yyyy-MM-dd";
+
 		}
 		public OdbcDataAdapter LlenarTabla(string table, string ID)
 		{
-			string sql = "SELECT * FROM "+table+" WHERE ID_ENCABEZADO = "+ID+";";
+			string sql = "SELECT * FROM "+table+" WHERE codigo_encabezado = '"+ID+"';";
 			OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conectar("FilmMagic"));
 			return dataTable;
 		}
@@ -66,11 +65,8 @@ namespace Prototipo2P
 		private void Button1_Click(object sender, EventArgs e)
 		{
 			int devolucion = 0;
-			if (checkBox1.Checked)
-			{
-				devolucion = 1;
-			}
-			string sql = "INSERT INTO renta_encabezado VALUES(NULL,"+combo1.obtener()+", "+combo2.obtener()+",'"+dateTimePicker1.Text.ToString()+"','"+dateTimePicker2.Text.ToString()+"', "+devolucion+", 1)";
+
+			string sql = "INSERT INTO factura VALUES(NULL,'"+combo1.obtener()+"', '"+combo2.obtener()+"','"+dateTimePicker1.Text.ToString()+"', 1)";
 			ejecutarQuery(sql);
 			MessageBox.Show("Guardado");
 			groupBox1.Enabled = false;
@@ -82,7 +78,7 @@ namespace Prototipo2P
 		public string ObtenerPrecio(string no)
 		{
 			string id = "";
-			OdbcCommand command = new OdbcCommand("SELECT PRECIO FROM material WHERE MATERIAL = " + no + " ;", cn.conectar("FilmMagic"));
+			OdbcCommand command = new OdbcCommand("SELECT precio FROM productos WHERE codigo_producto = '" + no + "' ;", cn.conectar("FilmMagic"));
 			OdbcDataReader reader = command.ExecuteReader();
 			if (reader.Read())
 			{
@@ -96,7 +92,7 @@ namespace Prototipo2P
 		public string Obtenerencabezado()
 		{
 			string id = "";
-			OdbcCommand command = new OdbcCommand("SELECT MAX(ID_ENCABEZADO) FROM renta_encabezado ;", cn.conectar("FilmMagic"));
+			OdbcCommand command = new OdbcCommand("SELECT MAX(codigo_encabezado) FROM factura;", cn.conectar("FilmMagic"));
 			OdbcDataReader reader = command.ExecuteReader();
 			if (reader.Read())
 			{
@@ -181,16 +177,16 @@ namespace Prototipo2P
 			string sql = "";
 			foreach (DataGridViewRow row in dataGridView1.Rows)
 			{
-				 sql = "INSERT INTO renta_detalle VALUES(NULL," +Obtenerencabezado()+ ", " + row.Cells[1].Value.ToString()+ ",'" + row.Cells[2].Value.ToString() + "'," + row.Cells[0].Value.ToString() + ", 1)";
+				sql = "INSERT INTO factura_det VALUES(NULL,'" + Obtenerencabezado() + "', '" + row.Cells[1].Value.ToString()+ "'," + row.Cells[2].Value.ToString() + ")";
 				ejecutarQuery(sql);
 			}
 			MessageBox.Show("Guardados");
-			OdbcDataAdapter dt = LlenarTabla("renta_encabezado", Obtenerencabezado());
+			OdbcDataAdapter dt = LlenarTabla("factura_det", Obtenerencabezado());
 			DataTable table = new DataTable();
 			dt.Fill(table);
 			dataGridView2.DataSource = table;
 			MessageBox.Show("Generando Comprobante");
-			exportarTabla(dataGridView2,Obtenerencabezado());
+			exportarTabla(dataGridView2, Obtenerencabezado());
 			dataGridView1.Rows.Clear();
 			textBox5.Text = "";
 			groupBox1.Enabled = true;

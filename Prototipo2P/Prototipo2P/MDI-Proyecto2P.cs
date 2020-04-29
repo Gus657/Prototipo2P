@@ -143,5 +143,11 @@ namespace Prototipo2P
 			Productos pr = new Productos(lbl_usuario.Text);
 			pr.Show();
 		}
+
+		private void FacturacionToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Rentas pr = new Rentas(lbl_usuario.Text);
+			pr.Show();
+		}
 	}
 }
