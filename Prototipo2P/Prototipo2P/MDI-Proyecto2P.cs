@@ -108,7 +108,7 @@ namespace Prototipo2P
 		private void MDI_Proyecto2P_Load(object sender, EventArgs e)
 		{
 			frm_login log = new frm_login();
-			log.Show();
+			log.ShowDialog();
 			
 		}
 

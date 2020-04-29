@@ -177,7 +177,7 @@ namespace Prototipo2P
 			string sql = "";
 			foreach (DataGridViewRow row in dataGridView1.Rows)
 			{
-				sql = "INSERT INTO factura_det VALUES(NULL,'" + Obtenerencabezado() + "', '" + row.Cells[1].Value.ToString()+ "'," + row.Cells[2].Value.ToString() + ")";
+				sql = "INSERT INTO factura_det VALUES(NULL,'" + Obtenerencabezado() + "', '" + row.Cells[1].Value.ToString()+ "'," + textBox5.Text + ")";
 				ejecutarQuery(sql);
 			}
 			MessageBox.Show("Guardados");
