@@ -53,7 +53,7 @@ namespace CapaDiseno
                         {
                             this.Close();
                             sentencia s = new sentencia();
-                            s.insertarBitacora(Txt_usuario.Text.Trim(), "Se logeo al sistema", "Login");
+                          //  s.insertarBitacora(Txt_usuario.Text.Trim(), "Se logeo al sistema", "Login");
 
                         }
                         else
