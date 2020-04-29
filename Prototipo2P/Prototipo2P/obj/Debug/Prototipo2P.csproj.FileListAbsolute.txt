@@ -1,0 +1,10 @@
+C:\Users\gganp\Desktop\Prototipo2P\Prototipo2P\Prototipo2P\obj\Debug\Prototipo2P.csprojAssemblyReference.cache
+C:\Users\gganp\Desktop\Prototipo2P\Prototipo2P\Prototipo2P\obj\Debug\Prototipo2P.MDI_Proyecto2P.resources
+C:\Users\gganp\Desktop\Prototipo2P\Prototipo2P\Prototipo2P\obj\Debug\Prototipo2P.Properties.Resources.resources
+C:\Users\gganp\Desktop\Prototipo2P\Prototipo2P\Prototipo2P\obj\Debug\Prototipo2P.csproj.GenerateResource.cache
+C:\Users\gganp\Desktop\Prototipo2P\Prototipo2P\Prototipo2P\obj\Debug\Prototipo2P.csproj.CoreCompileInputs.cache
+C:\Users\gganp\Desktop\Prototipo2P\Prototipo2P\Prototipo2P\bin\Debug\Prototipo2P.exe.config
+C:\Users\gganp\Desktop\Prototipo2P\Prototipo2P\Prototipo2P\bin\Debug\Prototipo2P.exe
+C:\Users\gganp\Desktop\Prototipo2P\Prototipo2P\Prototipo2P\bin\Debug\Prototipo2P.pdb
+C:\Users\gganp\Desktop\Prototipo2P\Prototipo2P\Prototipo2P\obj\Debug\Prototipo2P.exe
+C:\Users\gganp\Desktop\Prototipo2P\Prototipo2P\Prototipo2P\obj\Debug\Prototipo2P.pdb
