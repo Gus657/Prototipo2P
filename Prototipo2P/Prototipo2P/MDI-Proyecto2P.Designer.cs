@@ -274,11 +274,12 @@
 			this.ClientSize = new System.Drawing.Size(632, 453);
 			this.Controls.Add(this.lbl_usuario);
 			this.Controls.Add(this.menuStrip);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.IsMdiContainer = true;
 			this.MainMenuStrip = this.menuStrip;
 			this.Name = "MDI_Proyecto2P";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Gustavo Andres Perez";
+			this.Text = "0901-16-420 - Gustavo Perez";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.Load += new System.EventHandler(this.MDI_Proyecto2P_Load);
 			this.menuStrip.ResumeLayout(false);
