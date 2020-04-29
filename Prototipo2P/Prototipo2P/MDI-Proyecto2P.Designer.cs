@@ -49,13 +49,13 @@
 			this.bodegasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.facturacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.informesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
 			this.lbl_usuario = new System.Windows.Forms.Label();
-			this.facturacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -221,6 +221,13 @@
 			this.procesosToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
 			this.procesosToolStripMenuItem.Text = "Procesos";
 			// 
+			// facturacionToolStripMenuItem
+			// 
+			this.facturacionToolStripMenuItem.Name = "facturacionToolStripMenuItem";
+			this.facturacionToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+			this.facturacionToolStripMenuItem.Text = "Facturación";
+			this.facturacionToolStripMenuItem.Click += new System.EventHandler(this.FacturacionToolStripMenuItem_Click);
+			// 
 			// informesToolStripMenuItem
 			// 
 			this.informesToolStripMenuItem.Name = "informesToolStripMenuItem";
@@ -258,17 +265,12 @@
 			this.lbl_usuario.TabIndex = 2;
 			this.lbl_usuario.Text = "Gus";
 			// 
-			// facturacionToolStripMenuItem
-			// 
-			this.facturacionToolStripMenuItem.Name = "facturacionToolStripMenuItem";
-			this.facturacionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-			this.facturacionToolStripMenuItem.Text = "Facturación";
-			this.facturacionToolStripMenuItem.Click += new System.EventHandler(this.FacturacionToolStripMenuItem_Click);
-			// 
 			// MDI_Proyecto2P
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(632, 453);
 			this.Controls.Add(this.lbl_usuario);
 			this.Controls.Add(this.menuStrip);
