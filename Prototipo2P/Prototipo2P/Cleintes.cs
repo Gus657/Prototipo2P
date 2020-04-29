@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Prototipo2P
 {
-	public partial class Form1 : Form
+	public partial class Cleintes : Form
 	{
-		public Form1()
+		public Cleintes()
 		{
 			InitializeComponent();
 		}

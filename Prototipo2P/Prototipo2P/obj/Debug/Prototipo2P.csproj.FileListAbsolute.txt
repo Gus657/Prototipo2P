@@ -8,3 +8,11 @@ C:\Users\gganp\Desktop\Prototipo2P\Prototipo2P\Prototipo2P\bin\Debug\Prototipo2P
 C:\Users\gganp\Desktop\Prototipo2P\Prototipo2P\Prototipo2P\bin\Debug\Prototipo2P.pdb
 C:\Users\gganp\Desktop\Prototipo2P\Prototipo2P\Prototipo2P\obj\Debug\Prototipo2P.exe
 C:\Users\gganp\Desktop\Prototipo2P\Prototipo2P\Prototipo2P\obj\Debug\Prototipo2P.pdb
+C:\Users\gganp\Desktop\Prototipo2P\Prototipo2P\Prototipo2P\bin\Debug\CapaDiseno.dll
+C:\Users\gganp\Desktop\Prototipo2P\Prototipo2P\Prototipo2P\bin\Debug\CapaLogica.dll
+C:\Users\gganp\Desktop\Prototipo2P\Prototipo2P\Prototipo2P\bin\Debug\CapaDatos.dll
+C:\Users\gganp\Desktop\Prototipo2P\Prototipo2P\Prototipo2P\bin\Debug\CapaDiseno.pdb
+C:\Users\gganp\Desktop\Prototipo2P\Prototipo2P\Prototipo2P\bin\Debug\CapaLogica.pdb
+C:\Users\gganp\Desktop\Prototipo2P\Prototipo2P\Prototipo2P\bin\Debug\CapaDatos.pdb
+C:\Users\gganp\Desktop\Prototipo2P\Prototipo2P\Prototipo2P\obj\Debug\Prototipo2P.csproj.CopyComplete
+C:\Users\gganp\Desktop\Prototipo2P\Prototipo2P\Prototipo2P\obj\Debug\Prototipo2P.Cleintes.resources

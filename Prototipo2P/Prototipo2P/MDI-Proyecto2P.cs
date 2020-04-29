@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaDiseno;
 
 namespace Prototipo2P
 {
@@ -105,6 +106,21 @@ namespace Prototipo2P
 		}
 
 		private void MDI_Proyecto2P_Load(object sender, EventArgs e)
+		{
+			frm_login log = new frm_login();
+			log.Show();
+			
+		}
+
+		private void SeguridadToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+
+			MessageBox.Show(lbl_usuario.Text);
+			MDI_Seguridad seg = new MDI_Seguridad(lbl_usuario.Text);
+			seg.Show();
+		}
+
+		private void ClientesToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 
 		}
