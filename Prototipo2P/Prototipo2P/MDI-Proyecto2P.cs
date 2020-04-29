@@ -122,7 +122,14 @@ namespace Prototipo2P
 
 		private void ClientesToolStripMenuItem_Click(object sender, EventArgs e)
 		{
+			Clientes cli = new Clientes(lbl_usuario.Text);
+			cli.Show();
+		}
 
+		private void ProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Marca cli = new Marca(lbl_usuario.Text);
+			cli.Show();
 		}
 	}
 }
